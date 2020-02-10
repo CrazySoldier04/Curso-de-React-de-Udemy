@@ -12,6 +12,7 @@ function App() {
         <p>
           Hola Mundo, estoy aprendiendo a utilizar React
         </p>
+        <h1>Vamonos a Canadá a trabajar en front-end :)</h1>
         <a
           className="App-link"
           href="https://reactjs.org"
