@@ -44,6 +44,33 @@ class Text extends Component
   }
 }
 
+//Componente con estado.
+class Contador extends Component
+{
+  constructor(props)
+  {
+    super(props)
+    this.state = {contador: this.props.contadorInicial}
+    setInterval(() => {
+    this.setState({contador: this.state.contador + 1})
+    }, 1000);
+  }
+
+  render()
+  {
+    return(<ContadorNumero numero={this.state.contador}/>)
+  }
+}
+Contador.defaultProps = {contadorInicial: 0}
+
+class ContadorNumero extends Component
+{
+  render()
+  {
+  return(<span>{this.props.numero}</span>)
+  }
+}
+
 function App() {
   return (
     <div className="App">
@@ -67,6 +94,7 @@ function App() {
         >
           Learn React
         </a>
+        <Contador contadorInicial={50}/>
       </header>
     </div>
   );
