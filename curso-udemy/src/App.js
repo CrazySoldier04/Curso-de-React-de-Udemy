@@ -1,7 +1,8 @@
-//import React, {Component} from 'react';
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ConditionalSection from './sections/conditional'
+import NumberList from './sections/lists'
 
 // Componente como función.
 /*function Hello (props) {
@@ -95,6 +96,8 @@ function App() {
           Learn React
         </a>
         <Contador contadorInicial={50}/>
+        <ConditionalSection />
+        <NumberList />
       </header>
     </div>
   );
