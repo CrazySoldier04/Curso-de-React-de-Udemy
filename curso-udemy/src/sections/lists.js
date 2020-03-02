@@ -1,6 +1,27 @@
 import React, {Component} from 'react'
+import cars from '../data/cars.json'
 
-class NumbersList extends Component
+class CarItem extends Component
+{
+    render()
+    {
+        return(
+            cars.map((car) => {
+            return(
+                <div key={car.id}>
+                <li>
+                    <p>Serie: {car.id}</p>
+                    <p><strong>Marca: </strong>{car.company}</p>
+                    <p><strong>Modelo: </strong>{car.name}</p>
+                </li>
+                </div>
+                )}
+            )
+        )
+    }
+}
+
+/*class NumbersList extends Component
 {
     render()
     {
@@ -19,6 +40,15 @@ export default class NumberList extends Component
 {
     render()
     {
-        return <NumbersList />
+        return <CarItem id={car.id} key={car.id} car={car}/>
+    }
+}
+*/
+
+export default class CarItemList extends Component
+{
+    render()
+    {
+        return <CarItem />
     }
 }
