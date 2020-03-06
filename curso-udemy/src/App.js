@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Form from './sections/forms'
+//import Form from './sections/forms'
+import BoxChildren from './sections/children'
+import FetchExample from './sections/fetch-example'
 
 // Componente como función.
 /*function Hello (props) {
@@ -79,9 +81,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Curso de React</h1>
         <img src={logo} className="App-logo" alt="logo" />
-        <Form />
       </header>
+      <body>
+        <BoxChildren />
+        <FetchExample />
+      </body>
     </div>
   );
 }
