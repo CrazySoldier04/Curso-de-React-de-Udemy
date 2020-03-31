@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
-//import Form from './sections/forms'
-import BoxChildren from './sections/children'
+import EjemploDeActualizacion from './sections/ejemploDeActualizacion'
 import FetchExample from './sections/fetch-example'
 
 // Componente como función.
@@ -51,7 +49,7 @@ return (<h2>{props.title}</h2>)
 */
 
 //Componente con estado.
-class Contador extends Component
+/*class Contador extends Component
 {
   constructor(props)
   {
@@ -75,19 +73,13 @@ class ContadorNumero extends Component
   {
   return(<span>{this.props.numero}</span>)
   }
-}
+}*/
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Curso de React</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-      <body>
-        <BoxChildren />
-        <FetchExample />
-      </body>
+      <EjemploDeActualizacion />
+      <FetchExample />
     </div>
   );
 }
